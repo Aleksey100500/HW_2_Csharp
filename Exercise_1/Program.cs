@@ -3,13 +3,18 @@
 456 -> 5
 782 -> 8
 918 -> 1*/
-
-Console.WriteLine("Введите трёхзначное число - ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-int number = n / 10;
-
-if (number < 100)
+class Program
 {
-    Console.WriteLine("Вторая цифра этого числа : {0}",  number.ToString().ToCharArray()[1]);
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите трёхзначное число - ");
+        int n = Convert.ToInt32(Console.ReadLine());
+
+        int number = n / 10;
+
+        if (number < 100)
+        {
+            Console.WriteLine("Вторая цифра этого числа : {0}",  number.ToString().ToCharArray()[1]);
+        }
+    }
 }
