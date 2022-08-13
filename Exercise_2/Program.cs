@@ -4,26 +4,28 @@
 78 -> третьей цифры нет
 
 32679 -> 6    */
-
-Console.WriteLine("Введите число: ");
-int n = Convert.ToInt32(Console.ReadLine());
-
-int number = n / 10;
-
-if (number < 100)
+class Program
 {
-    Console.WriteLine("Третья цифра этого числа : {0}",  number.ToString().ToCharArray()[2]);
-}
+    static void Main(string[] args)
+    {
+        Console.WriteLine("Введите число: ");
+        int n = Convert.ToInt32(Console.ReadLine());
 
-if (number < 10)
-{
-    Console.WriteLine("2");
-}
+        int number = n / 10;
 
-if (number < 10000)
-{
-    Console.WriteLine("Третья цифра этого числа : {0}", number.ToString().ToCharArray()[2]);
-}
+        if (number < 100)
+        {
+            Console.WriteLine("Третья цифра этого числа : {0}",  number.ToString().ToCharArray()[2]);
+        }
 
-Console.WriteLine(new string('=', 50));
-Console.WriteLine("READY!");
+/*        if (number <= 10)
+        {
+            Console.WriteLine("2");
+        }
+
+        if (number <= 10000)
+        {
+            Console.WriteLine("Третья цифра этого числа : {0}", number.ToString().ToCharArray()[2]);
+        }*/
+    }
+}
