@@ -7,14 +7,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Введите трёхзначное число - ");
-        int n = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число:");
+    int n = Convert.ToInt32(Console.ReadLine());
 
-        int number = n / 10;
-
-        if (number < 100)
-        {
-            Console.WriteLine("Вторая цифра этого числа : {0}",  number.ToString().ToCharArray()[1]);
-        }
+    Console.WriteLine(n>99 ? n.ToString()[1] : '-');
+    Console.ReadKey(true);
     }
 }

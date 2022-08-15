@@ -8,24 +8,10 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Введите число: ");
-        int n = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число:");
+    int n = Convert.ToInt32(Console.ReadLine());
 
-        int number = n / 10;
-
-        if (number < 100)
-        {
-            Console.WriteLine("Третья цифра этого числа : {0}",  number.ToString().ToCharArray()[2]);
-        }
-
-/*        if (number <= 10)
-        {
-            Console.WriteLine("2");
-        }
-
-        if (number <= 10000)
-        {
-            Console.WriteLine("Третья цифра этого числа : {0}", number.ToString().ToCharArray()[2]);
-        }*/
+    Console.WriteLine(n>99 ? n.ToString()[2] : '-');
+    Console.ReadKey(true);
     }
 }
